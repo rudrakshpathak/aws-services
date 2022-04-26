@@ -9,7 +9,7 @@ A streamlined process of using all AWS services at one place.
 [![version](https://img.shields.io/static/v1?label=node&message=>v12.*&color=success)]()
 [![version](https://img.shields.io/static/v1?label=npm&message=>v6.*&color=blue)]()
 
-### Installation [WILL BE PUBLISHED SOON. TILL THEN YOU CAN IMPORT THE FILES DIRECTLY
+### Installation [A STABLE VERSION WILL BE PUBLISHED SOON. TILL THEN YOU CAN IMPORT THE FILES DIRECTLY
 ```npm
 npm i -s aws-services
 ```
