@@ -1,4 +1,4 @@
-# AWS Services [Beta Version]
+# AWS Services [IN DEVELOPMENT]
 A streamlined process of using all AWS services at one place. 
 
 [![version](https://img.shields.io/static/v1?label=version&message=v0.0.5&color=ff69b4)]()
@@ -6,10 +6,10 @@ A streamlined process of using all AWS services at one place.
 [![status](https://img.shields.io/static/v1?label=status&message=development&color=orange)]()
 
 ### Requirements 
-[![version](https://img.shields.io/static/v1?label=node&message=v8.*&color=success)]()
-[![version](https://img.shields.io/static/v1?label=npm&message=v6.*&color=blue)]()
+[![version](https://img.shields.io/static/v1?label=node&message=>v12.*&color=success)]()
+[![version](https://img.shields.io/static/v1?label=npm&message=>v6.*&color=blue)]()
 
-### Installation [WILL BE PUBLISHED SOON. TILL THEN YOU CAN IMPORT THE FILES DIRECTLY
+### Installation [A STABLE VERSION WILL BE PUBLISHED SOON. TILL THEN YOU CAN IMPORT THE FILES DIRECTLY
 ```npm
 npm i -s aws-services
 ```
