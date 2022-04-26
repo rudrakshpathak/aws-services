@@ -8,6 +8,7 @@ import { IAwsResponse } from '../../core/aws-interfaces';
 import { CognitoConfirmUserProps, CognitoDeleteUserAttributesProps, CognitoUserChangePassword, CognitoDeleteUserProps, CognitoRefreshTokenProps, CognitoAuthenticateUserProps, CognitoCreateUserProps, CognitoSignOutUserProps, CognitoResendConfirmationProps, CognitoGetUserDataProps, CognitoUpdateUserProps, CognitChangeUserStatusProps } from './aws-cognito-props';
 import { AdminCreateUserRequest, AttributeType, DeliveryMediumType, DeliveryMediumListType } from 'aws-sdk/clients/cognitoidentityserviceprovider';
 import constants from '../../helpers/constants';
+import Utils from '../../helpers/utils';
 const globalConst: any = global;
 
 export default class AwsCognito extends AwsCore implements IAwsCognito {
@@ -64,7 +65,7 @@ export default class AwsCognito extends AwsCore implements IAwsCognito {
                 UserPoolId: this.cognitoUserPool.getUserPoolId(),
                 Username: userData.email,
                 UserAttributes: attributeList,
-                TemporaryPassword: this.generatePassword(constants.COGNITO.TEMP_PASSWORD_LENGTH),
+                TemporaryPassword: Utils.generatePassword(constants.COGNITO.TEMP_PASSWORD_LENGTH),
                 DesiredDeliveryMediums: deliveryMediumList
             }
 
