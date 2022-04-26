@@ -4,6 +4,7 @@ import AwsResponse from '../../helpers/response-handler';
 import IAwsS3 from './aws-s3-interface';
 import { S3UploadFileProps, S3GetFileProps, S3ListFilesProps, S3DeleteFileProps, S3CreateBucketProps, S3DeleteBucketProps } from './aws-s3-props';
 import constants from '../../helpers/constants';
+import Utils from '../../helpers/utils';
 
 export default class AwsS3 extends AwsCore implements IAwsS3 {
     /**
@@ -98,7 +99,7 @@ export default class AwsS3 extends AwsCore implements IAwsS3 {
             return new Promise((resolve, reject) => {
                 this.s3ServiceProvider.putObject({
                     Bucket: fileData.bucket,
-                    Key: fileData.objectKey ?? this.generateGuid(constants.GUID_LENGTH),
+                    Key: fileData.objectKey ?? Utils.generateGuid(constants.GUID_LENGTH),
                     Body: fileData.objectContent
                 }, (error, result) => {
                     if (error) {
