@@ -1,4 +1,4 @@
-# AWS Services [IN DEVELOPMENT]
+# AWS Services [IN DEVELOPMENT - OPEN FOR CONTRIBUTIONS]
 A streamlined process of using all AWS services at one place. 
 
 [![version](https://img.shields.io/static/v1?label=version&message=v0.0.5&color=ff69b4)]()
@@ -11,12 +11,12 @@ A streamlined process of using all AWS services at one place.
 
 ### Installation [A STABLE VERSION WILL BE PUBLISHED SOON. TILL THEN YOU CAN IMPORT THE FILES DIRECTLY
 ```npm
-npm i -s aws-services
+npm i aws-services-sdk-wrapper
 ```
 
 ### Import the package
 ```js
-import aws from 'aws-services'
+import aws from 'aws-services-sdk-wrapper'
 ```
 
 ### Supported services
