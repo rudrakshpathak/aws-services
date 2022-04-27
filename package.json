@@ -1,25 +1,40 @@
 {
-	"name": "aws_services",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"tsc": "tsc",
-		"dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"@types/express": "^4.17.6",
-		"@types/node-fetch": "^2.6.1",
-		"amazon-cognito-identity-js": "^4.2.1",
-		"aws-sdk": "^2.1121.0",
-		"dotenv": "^8.2.0",
-		"express": "^4.17.1",
-		"node-fetch": "^2.6.7",
-		"ts-node-dev": "^1.1.8",
-		"typescript": "^3.8.3"
-	},
-	"types": "index.d.ts"
+  "name": "aws-services",
+  "version": "1.0.0",
+  "description": "A NodeJS based wrapper for quick usage of AWS services. A plug and play wrapper which allows developers to reduce the setup cost of services and SDKs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+  },
+  "author": "Rudraksh Pathak",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node-fetch": "^2.6.1",
+    "amazon-cognito-identity-js": "^4.2.1",
+    "aws-sdk": "^2.1121.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.7",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^3.8.3"
+  },
+  "types": "index.d.ts",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudrakshpathak/aws-services.git"
+  },
+  "keywords": [
+    "aws",
+    "nodejs",
+    "package",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/rudrakshpathak/aws-services/issues"
+  },
+  "homepage": "https://github.com/rudrakshpathak/aws-services#readme"
 }
